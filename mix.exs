@@ -7,11 +7,11 @@ defmodule Hipchat.Mixfile do
     [
       app:             :hipchat_elixir,
       version:         "0.2.2",
-      elixir:          "~> 1.3",
+      elixir:          "~> 1.4",
       build_embedded:  Mix.env == :prod,
       start_permanent: false,
-      deps:            deps,
-      elixirc_paths:   paths,
+      deps:            deps(),
+      elixirc_paths:   paths(),
       description:     "HiChat client library for Elixir",
       source_url:      @github_url,
       package:         [
